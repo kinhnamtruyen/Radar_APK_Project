@@ -11,7 +11,7 @@ workflows:
 
       - name: Build Android APK
         script: |
-          gradle wrapper
+          gradle wrapper --gradle-version 8.7
           chmod +x ./gradlew
           ./gradlew assembleRelease
 

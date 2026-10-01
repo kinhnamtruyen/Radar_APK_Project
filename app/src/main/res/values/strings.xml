@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Radar</string>
+    <string name="scan">QUÉT WI-FI + BLUETOOTH</string>
+    <string name="status_ready">Sẵn sàng quét</string>
+</resources>

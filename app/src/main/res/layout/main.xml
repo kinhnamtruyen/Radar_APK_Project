@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#020F0A">
+
+    <com.mycompany.myapp.RadarView
+        android:id="@+id/radarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/status_ready"
+            android:textColor="#D8FFE4"
+            android:textSize="14sp"
+            android:background="#B3020F0A"
+            android:padding="8dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/scanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scan"
+            android:textAllCaps="false" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="8dp"
+            android:background="#B3020F0A">
+
+            <LinearLayout
+                android:id="@+id/resultsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>
